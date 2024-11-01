@@ -27,7 +27,7 @@ def send_email():
         text = msg.as_string()
 
         # Send email
-        server.sendmail(email_user, "akrishnan1609@gmail.com", text)
+        server.sendmail(email_user, "akrish@gmail.com", text)
 
         # Disconnect from the server
         server.quit()
