@@ -4,19 +4,19 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 # Email and app-specific password
-email_user = "krishnananand73@gmail.com"
-email_password = "efui ksfm cdpj nuly"
+email_user = "krish@gmail.com"
+email_password = "efui"
 
 
 def send_email():
     # Create a multipart message
     msg = MIMEMultipart()
     msg['From'] = email_user
-    msg['To'] = "akrishnan1609@gmail.com"
+    msg['To'] = "akrish@gmail.com"
     msg['Subject'] = "First automated email"
 
     # Email body
-    body = "Hey Anand, I think you are falling in love with Saipriya. Take care of her. Make sure she is never sad. \nThanking You, Anand"
+    body = "Hey Anand, This is the body. \nThanking You, Ash"
     msg.attach(MIMEText(body, 'plain'))
 
     try:
